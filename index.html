@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <h1>#todo</h1>
+      <div class="filter-todo">
+        <div class="navItem">
+          <button class="all" value="all">All</button>
+          <div class="navActive"></div>
+        </div>
+        <div class="navItem">
+          <button class="active" value="active">Active</button>
+        </div>
+        <div class="navItem">
+          <button class="complete" value="complete">Completed</button>
+        </div>
+      </div>
+      <form id="userForm">
+        <input type="text" placeholder="add details" class="todo-input" />
+        <button class="todo-button">Add</button>
+      </form>
+      <div id="todo-container">
+        <ul class="todo-list"></ul>
+        <button id="forRemoveBtn" class="deleteAll">delete all</button>
+      </div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+      integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Flip.min.js"
+      integrity="sha512-RL2ypMFkOs/iB79bWnNiFrZRCqyExtQ38n/K+t7Xjf09YZcvSzqgSaGVj+fiVYEqVRLf/WjdHmwGImZM3XO5gA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
