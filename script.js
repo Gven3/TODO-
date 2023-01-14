@@ -34,6 +34,10 @@ function addTodo(e) {
     alert("please enter something");
     return false;
   }
+  if (todoInput.value.trim().length === 0) {
+    alert("please enter something");
+    return false;
+  }
   const removeDiv = document.createElement("div");
 
   const todoDiv = document.createElement("div");
@@ -183,7 +187,7 @@ links.forEach((link) => {
     Flip.from(state, {
       duration: 1,
       absolute: true,
-      ease: "elastic.out(1,0.5)",
+      ease: "elastic.out(1,0.3)",
     });
   });
 });
